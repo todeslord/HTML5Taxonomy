@@ -1,0 +1,249 @@
+html, body {
+    margin:0;
+    padding:0;
+    font-family: "Lucida Grande", Verdana;
+    font-size: 0.9em;
+    text-align: center;
+    background-color:#F2F2F2;
+}
+
+input, select {
+    font-size:0.9em;
+}
+
+table {
+    margin-top:-10px;
+    margin-left:7px;
+	
+}
+
+td {
+
+border-style: solid;
+
+}
+
+/* background-color for different ImplementationStatus
+	implemented: #7fff00
+	heavy testing: yellow
+	in the wild: orange
+	not implemented: #ff6347 */
+
+td.implemented{
+ 	background-color: #7fff00;
+}
+
+td.heavy{
+ 	background-color: yellow;
+}
+
+td.in{
+ 	background-color: orange;
+}
+
+td.not{
+ 	background-color: #ff6347;
+}
+
+/* background-color for different Orientation
+	XML: #7fff00
+	JavaScript: yellow
+	HTML: orange
+	not used in this case: #ff6347 */
+
+td.XML{
+ 	background-color: #7fff00;
+}
+
+td.JavaScript{
+ 	background-color: yellow;
+}
+
+td.HTML{
+ 	background-color: orange;
+}
+
+/*td.not{
+ 	background-color: #ff6347;
+}*/
+
+/* background-color for different Category
+	data: #7fff00
+	language: yellow
+	communication: orange
+	access: #ff6347 */
+
+td.data{
+ 	background-color: #7fff00;
+}
+
+td.language{
+ 	background-color: yellow;
+}
+
+td.communication{
+ 	background-color: orange;
+}
+
+td.access{
+ 	background-color: #ff6347;
+}
+
+
+/* background-color for W3C-Status
+	Recommended: #7fff00
+	Candidate: yellow
+	Last Call: orange
+	Working Draft: #660033
+	not processed: #ff6347 */
+
+td.Recommendation{
+ 	background-color: #00FF00;
+}
+
+td.Candidate{
+ 	background-color: yellow;
+}
+
+td.Last{
+ 	background-color: orange;
+}
+
+td.Working{
+ 	background-color: #00ffff;
+}
+
+td.not{
+ 	background-color: #ff6347;
+}
+
+
+h2 {
+    font-size:1.1em;
+    text-decoration:none;
+    font-weight:normal;
+    color:#23A4FF;
+}
+
+a {
+    color:#23A4FF;
+}
+
+
+#container {
+    width: 95%;
+    height: 1000px;
+    margin:0 auto;
+    position:relative;
+}
+
+#right-container, 
+#center-container {
+    height:75%;
+    position:absolute;
+    top:40px;
+}
+
+#right-container {
+    width:25%;
+    color:#686c70;
+    text-align: left;
+    overflow: auto;
+    background-color:#fff;
+    background-repeat:no-repeat;
+    border-bottom:1px solid #ddd;
+}
+
+#right-container {
+    right:0;
+    background-image:url('col1.png');
+    background-position:center left;
+    border-right:1px solid #ddd;
+}
+
+#right-container h4{
+    text-indent:8px;
+}
+
+#center-container {
+    width: 75%;	
+    background-color:#1a1a1a;
+    color:#ccc;
+}
+
+.text {
+    margin: 7px;
+}
+
+#inner-details {
+    font-size:0.8em;
+    list-style:none;
+    margin-left:7px;
+    margin-bottom: -20px;	
+    height: 90%;
+}
+
+#right-container table {
+margin-top: 20px;
+}
+
+
+#footer {
+    position: absolute;
+    margin:7px;	
+    font-weight: bold;	
+    height: 20px;
+	
+}
+
+#source {
+    font-weight: normal;	
+}
+
+#log {
+    position:absolute;
+    top:10px;
+    font-size:1.0em;
+    font-weight:bold;
+    color:#23A4FF;
+}
+
+
+#infovis {
+    position:relative;
+    width:100%;
+    height:100%;
+    margin:auto;
+    overflow:hidden;
+    
+}
+
+p.disappear {
+   position: relative;
+   margin: 20px;
+}
+
+div#container:hover p.disappear{
+	display: none;
+	}
+
+a.black{
+   font-color: black;	
+}
+
+/*TOOLTIPS*/
+.tip {
+    color: #111;
+    width: 139px;
+    background-color: white;
+    border:1px solid #ccc;
+    -moz-box-shadow:#555 2px 2px 8px;
+    -webkit-box-shadow:#555 2px 2px 8px;
+    -o-box-shadow:#555 2px 2px 8px;
+    box-shadow:#555 2px 2px 8px;
+    opacity:0.9;
+    filter:alpha(opacity=90);
+    font-size:10px;
+    font-family:Verdana, Geneva, Arial, Helvetica, sans-serif;
+    padding:7px;
+}

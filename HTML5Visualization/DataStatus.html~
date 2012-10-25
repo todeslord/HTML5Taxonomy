@@ -1,0 +1,82 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>HTML5 Visualization</title>
+
+<!-- CSS Files -->
+<link type="text/css" href="Extras/base.css" rel="stylesheet" />
+<link type="text/css" href="Extras/Sunburst.css" rel="stylesheet" />
+<link type="text/css" href="Extras/menu.css" rel="stylesheet" />
+
+
+<!--[if IE]><script language="javascript" type="text/javascript" src="Extras/excanvas.js"></script><![endif]-->
+
+<!-- JIT Library File -->
+<script language="javascript" type="text/javascript" src="Extras/jit.js"></script>
+
+<!-- Example File -->
+<script language="javascript" type="text/javascript" src="HTMLVisualisation.js"></script>
+<script language="javascript" type="text/javascript" src="DataStatus.js"></script>
+
+
+</head>
+
+<body onload="init('sameStatus');">
+
+<h1>HTML5 Taxonomy (24.06.2012)</h1>
+
+<div id="container">
+
+<div class="navigation">
+<ul>
+<li><a href="HTMLVisualisation.html" title="Category" id="category">Category</a></li>
+<li><a href="DataImplementationStatus.html" title="Implementation status" id="implement">Implementation Status</a></li>
+<li><a href="DataOrientation.html" title="Data Orientation" id="orientation">Orientation</a></li>
+<li><a href="SameSpec.html" title="WhatWG vs. W3C" id="SameSpec">WhatWG vs. W3C</a></li>
+<li><a href="DataStatus.html" title="Data Status" id="status">W3C-Status</a></li>
+<li><a href="DataStatusImplementationStatus.html" title="DataStatusImplementationStatus" id="dStatus">Combined Status</a></li>
+
+
+</ul>
+</div>
+
+
+<div id="center-container">
+
+    <div id="infovis"></div>    
+</div>
+
+<div id="right-container">
+
+<p class="disappear">
+
+According to the W3C "The W3C technical report development process is the set of steps and requirements followed by W3C Working Groups to standardize Web technology."
+This view displays the three steps being essential in our point of view.
+The first step in specification-process is the <b>Working Draft</b>. A Working Group is frequently updating the specification.
+After the <b>Working</b> Draft the specification becomes Candidate Recommendation Status. In this step public review is expected.
+<b>Recommendation</b> is the final status. W3C reached consensus that this specification should be implemented.
+
+
+</p>
+
+<div id="inner-details"></div>
+
+<!-- Footer unter right-container über CSS fixiert -->
+
+<div id="footer">leftclick to display details for a certain topic
+<div id="source">Source: <a href="http://thejit.org/static/v20/Jit/Examples/Sunburst/example2.html" target="_new">thejit.org</a></div>
+
+</div>
+
+
+
+</div>
+
+<div id="log"></div>
+
+
+
+</div>
+</body>
+</html>

@@ -1,0 +1,185 @@
+function getJson() {
+var json ={
+"children" : [{
+
+		"children" : [{
+
+			"children" : [],
+			"data" : {
+				"feature" : "true",
+				"$angularWidth" : 30,
+				"category" : "communication",
+				"date" : "11.06.12",
+				"implementationStatus" : "heavy testing",
+				"w3cLink" : "http://www.w3.org/TR/websockets/",
+				"whatwgLink" : "http://www.whatwg.org/specs/web-apps/current-work/multipage/network.html#network",
+				"longDescription" : "To enable Web applications to maintain bidirectional communications with server-side processes, this specification introduces the WebSocket interface. ",
+				"orientation" : "JavaScript",
+				"sameSpec" : "yes",
+				"shortDescription" : "Bidirectional communication from web to server-side ",
+				"status" : "Working Draft",
+				"$color" : "#FCD9A1"
+			},
+			"id" : "HTML5/Working Draft/Web-Sockets",
+			"name" : "Web-Sockets"
+		},{
+
+			"children" : [],
+			"data" : {
+				"feature" : "true",
+				"$angularWidth" : 30,
+				"category" : "access",
+				"date" : "11.06.12",
+				"implementationStatus" : "in the wild",
+				"w3cLink" : "http://www.w3.org/TR/html5/dnd.html#dnd",
+				"whatwgLink" : "http://www.whatwg.org/specs/web-apps/current-work/multipage/dnd.html#dnd",
+				"longDescription" : "This section defines an event-based drag-and-drop mechanism.",
+				"orientation" : "JavaScript",
+				"sameSpec" : "yes",
+				"shortDescription" : "defines an event-based drag-and-drop-mechanism ",
+				"status" : "Working Draft",
+				"$color" : "#FCD9A1"
+			},
+			"id" : "HTML5/Working Draft/Drag&Drop",
+			"name" : "Drag&Drop"
+		},{
+
+			"children" : [],
+			"data" : {
+				"feature" : "true",
+				"$angularWidth" : 30,
+				"category" : "data",
+				"date" : "14.06.12",
+				"implementationStatus" : "-",
+				"w3cLink" : "http://www.w3.org/TR/microdata/",
+				"whatwgLink" : "http://www.whatwg.org/specs/web-apps/current-work/multipage/microdata.html#microdata",
+				"longDescription" : "WHAT-WG-Specification",
+				"orientation" : "HTML",
+				"sameSpec" : "nearly",
+				"shortDescription" : "-",
+				"status" : "Working Draft",
+				"$color" : "#FCD9A1"
+			},
+			"id" : "HTML5/Working Draft/Microdata",
+			"name" : "Microdata"
+		},{
+
+			"children" : [],
+			"data" : {
+				"feature" : "true",
+				"$angularWidth" : 30,
+				"category" : "language",
+				"date" : "15.06.12",
+				"implementationStatus" : "heavy testing",
+				"w3cLink" : "http://www.w3.org/TR/2dcontext/",
+				"whatwgLink" : "http://www.whatwg.org/specs/web-apps/current-work/multipage/the-canvas-element.html#the-",
+				"longDescription" : "",
+				"orientation" : "JavaScript, HTML",
+				"sameSpec" : "no",
+				"shortDescription" : "- ",
+				"status" : "Working Draft",
+				"$color" : "#FCD9A1"
+			},
+			"id" : "HTML5/Working Draft/Audio/Video",
+			"name" : "Audio/Video"
+		},{
+
+			"children" : [],
+			"data" : {
+				"feature" : "true",
+				"$angularWidth" : 30,
+				"category" : "communication",
+				"date" : "17.01.12",
+				"implementationStatus" : "-",
+				"w3cLink" : "http://www.w3.org/TR/XMLHttpRequest/",
+				"whatwgLink" : "-",
+				"longDescription" : "",
+				"orientation" : "JavaScript",
+				"sameSpec" : "",
+				"shortDescription" : "",
+				"status" : "Working Draft",
+				"$color" : "#FCD9A1"
+			},
+			"id" : "HTML5/Working Draft/Ajax",
+			"name" : "Ajax"
+		}],
+		"data" : {
+			"description" : "Description to Working Draft",
+			"$angularWidth" : 100,
+			"$color" : "#B0AAF6",
+			"feature" : "false"
+		},
+		"id" : "HTML5/Working Draft",
+		"name" : "Working Draft"
+	},{
+
+		"children" : [{
+
+			"children" : [],
+			"data" : {
+				"feature" : "true",
+				"$angularWidth" : 30,
+				"category" : "language",
+				"date" : "15.06.12",
+				"implementationStatus" : "-",
+				"w3cLink" : "http://www.w3.org/TR/workers/",
+				"whatwgLink" : "http://www.whatwg.org/specs/web-apps/current-work/multipage/workers.html#workers",
+				"longDescription" : "WHAT-WG-Specification",
+				"orientation" : "JavaScript",
+				"sameSpec" : "yes",
+				"shortDescription" : "",
+				"status" : "Candidate Recommendation",
+				"$color" : "#FCD9A1"
+			},
+			"id" : "HTML5/Candidate Recommendation/Web Workers",
+			"name" : "Web Workers"
+		}],
+		"data" : {
+			"description" : "Description to Candidate Recommendation",
+			"$angularWidth" : 100,
+			"$color" : "#B0AAF6",
+			"feature" : "false"
+		},
+		"id" : "HTML5/Candidate Recommendation",
+		"name" : "Candidate Recommendation"
+	},{
+
+		"children" : [{
+
+			"children" : [],
+			"data" : {
+				"feature" : "true",
+				"$angularWidth" : 30,
+				"category" : "data",
+				"date" : "",
+				"implementationStatus" : "-",
+				"w3cLink" : "-",
+				"whatwgLink" : "http://www.whatwg.org/specs/web-apps/current-work/multipage/dnd.html#dnd",
+				"longDescription" : "",
+				"orientation" : "",
+				"sameSpec" : "",
+				"shortDescription" : "- ",
+				"status" : "",
+				"$color" : "#FCD9A1"
+			},
+			"id" : "HTML5//Audio/Video",
+			"name" : "Audio/Video"
+		}],
+		"data" : {
+			"description" : "Description to ",
+			"$angularWidth" : 100,
+			"$color" : "#B0AAF6",
+			"feature" : "false"
+		},
+		"id" : "HTML5/",
+		"name" : ""
+	}],
+	"data" : {
+		"$type" : "none"
+	},
+	"id" : "HTML5",
+	"name" : "HTML5"
+   };
+
+   return json;
+}
