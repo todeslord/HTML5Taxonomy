@@ -1,0 +1,111 @@
+private static void writeCategoryImage(Feature[] features) {
+		try {
+			JSONStringer jsonL1 = new JSONStringer();
+
+			jsonL1.object().key("children").value(getL2("category", features))
+					.endObject();
+			
+			
+			System.out.println(jsonL1.toString());
+
+		} catch (JSONException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+
+	private static Object getL2(String string, Feature[] features) {
+		try {
+			JSONStringer json = new JSONStringer();
+
+			json.array();
+			for (int i = 0; i < features.length; i++) {
+				if (features[i] != null && !features[i].isInserted()) {
+					// category eröffnen
+					json.object();
+					// Features einfügen
+//					json.key("children").value(getL3(features, i));
+
+					// hier weitermachen
+					// category beenden + seine eigenschaften
+					json.endObject();
+				}
+			}
+			json.endArray();
+
+			return json.toString();
+		} catch (JSONException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+		return "";
+	}
+
+	private static Object getL3(Feature[] features, int i) {
+		JSONStringer json = new JSONStringer();
+		try {
+
+			json.array();
+			for (int j = i; j < features.length; j++) {
+				if (features[j] != null
+						&& features[i].getCategory().equals(
+								features[j].getCategory())) {
+
+					json = insertFeature(json, features[i]);
+					features[j].setInserted(true);
+				}
+			}
+			json.endArray();
+		} catch (JSONException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return json.toString();
+
+	}
+
+	private static JSONStringer insertFeature(JSONStringer json, Feature feature) {
+		try {
+			json.object();
+			json.key("children").value("[]");
+			json.key("data").value(getL5(feature));
+			json.key("id")
+					.value(
+							"Source/" + feature.getCategory() + "/"
+									+ feature.getName());
+			json.key("name").value(feature.getName());
+
+		} catch (JSONException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+		return json;
+	}
+
+	private static Object getL5(Feature feature) {
+		JSONStringer json = new JSONStringer();
+		try {
+			json.object();
+			json.key("description").value(feature.getName());
+			json.key("$angularWidth").value("500");
+			json.key("days").value("2");
+			json.key("$color").value("#B0AAF6");
+			json.key("size").value("500");
+			json.endObject();
+		} catch (JSONException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return json.toString();
+	}
+	
+	
+	
+	///***************
+	
+	3 Arten Ende
+	],	--endArray
+	},	--close
+	}], --endArrayClose
